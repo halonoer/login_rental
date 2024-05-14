@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: 'roboto flex';
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.kiri, .kanan {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.kiri {
+    background-color: white;
+
+}
+
+.kanan {
+    background-color: white;
+}
+
+.textbox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0px ;
+}
+
+.textbox label {
+    color: #757575;
+    margin: 10px 0px;
+    position: relative;
+}
+
+
+input {
+    border: none;
+    border-bottom: 1px solid grey; /* Atur garis bawah dengan ketebalan 1px dan warna hitam */
+    padding: 10px 10px;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    right: 10px;
+    top: 65%;
+    cursor: pointer;
+}
+
+.lupa {
+    display: inline-block; /* Mengubah elemen menjadi inline-block agar bisa diatur lebarnya */
+    margin-left: 300px;
+    color: #9895CF;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.form-login-remember {
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember {
+    display: flex;
+    align-items: center; /* Mengatur agar isi dalam vertikal tengah */
+    margin-right: 200px;
+}
+
+.remember input[type="checkbox"] {
+    /* Mengatur ukuran checkbox */
+    transform: scale(1.5); /* Mengatur skala checkbox menjadi 1.5 kali lebih besar */
+    margin-right: 5px; /* Menambahkan sedikit jarak antara checkbox dan teks "Remember Me" */
+    cursor: pointer
+}
+
+/* Gaya untuk label "Remember Me" */
+.remember label {
+    font-size: 14px; /* Menyesuaikan ukuran teks "Remember Me" */
+    color: #757575;
+    cursor: pointer
+
+}
+
+/* Gaya untuk tombol login */
+button[type="submit"] {
+    background-color: #F26240; /* Warna latar belakang */
+    color: #FFFFFF; /* Warna teks */
+    border: none; /* Menghapus border */
+    border-radius: 52px; /* Radius sudut untuk membuat tombol lebih bulat */
+    padding: 15px 30px; /* Padding untuk memberikan ruang di dalam tombol */
+    cursor: pointer; /* Mengubah kursor menjadi tanda panah saat diarahkan ke tombol */
+    font-size: 16px; /* Ukuran teks */  
+    font-weight: bold; /* Tebal teks */
+    text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+    transition: background-color 0.3s ease; /* Transisi perubahan warna latar belakang */
+}
+
+/* Efek hover saat kursor diarahkan ke tombol */
+button[type="submit"]:hover {
+    background-color: #FF7043; /* Warna latar belakang yang berbeda saat dihover */
+}
+
+.belum {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.blur {
+    position: relative;
+    display: inline-block; /* Agar container hanya sebesar kontennya */
+}
+
+.orange {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Menutupi seluruh lebar gambar */
+    height: 100%; /* Menutupi seluruh tinggi gambar */
+    background: linear-gradient(to right, rgba(255, 112, 67, 0.8), rgba(255, 112, 67, 0) 50%);
+    filter: blur(10px); /* Atur tingkat blur sesuai kebutuhan */
+    z-index: 1; /* Agar lapisan blur berada di atas gambar */
+    pointer-events: none; /* Memastikan elemen ini tidak mengganggu interaksi pengguna dengan gambar */
+}
+
+.mobil {
+    display: block;
+    width: 100vh; /* Lebar gambar sesuai container */
+    height: auto; /* Menyesuaikan tinggi gambar */
+    z-index: 0; /* Gambar berada di bawah lapisan blur */
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 50%; /* Posisikan di tengah vertikal */
+    left: 50%; /* Posisikan di tengah horizontal */
+    transform: translate(-50%, -50%); /* Menggeser elemen ke tengah */
+    z-index: 2; /* Agar logo berada di atas semua elemen lainnya */
+    width: 60vh; /* Atur lebar logo sesuai kebutuhan */
+    height: auto; /* Menyesuaikan tinggi logo */
+}

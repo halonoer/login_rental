@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="coba.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="kiri">
+            <form action="login" method="post">
+                <div class="textbox">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="textbox">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                    <span class="password-toggle-icon"><i class="fas fa-eye"></i></span>
+                </div>
+                <a class="lupa" href="">Lupa password ?</a>
+                <div class="form-login-remember">
+                    <div class="remember">
+                        <input type="checkbox" value="true" name="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <button type="submit">Log in</button>                               
+                </div>
+                <div class="belum">
+                    <label for="belum">Belum punya akun? <a href="">Daftar Disini</a></label>
+                </div>
+            </form>
+        </div>
+        <div class="kanan">
+            <div class="blur">
+                <div class="orange"></div>
+                <img class="mobil" src="img/mobil.jpg" alt="">
+                <img class="logo" src="img/logo.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
